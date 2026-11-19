@@ -1,6 +1,6 @@
 # prj_withdrawal · Cajero Automático (Go)
 
-![CI](https://github.com/USUARIO/prj_withdrawal/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/gonzalouni/prj_withdrawal/actions/workflows/ci.yml/badge.svg)
 
 Proyecto del curso **DSL / Gherkin-BDD** (UNI-FIIS). Implementa los casos de uso
 **Retiro de efectivo**, **Abono en efectivo** e **Integridad de la transacción**
