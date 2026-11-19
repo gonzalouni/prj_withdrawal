@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cajero Automático · prj_withdrawal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Cajero Automático</h1>
+    <p class="sub">Retiro y abono en efectivo · integridad y auditoría de transacciones</p>
+
+    <section class="card">
+      <label for="cuenta">Titular</label>
+      <select id="cuenta"></select>
+      <div class="saldo"><span>Saldo disponible</span><strong id="saldo">S/ —</strong></div>
+    </section>
+
+    <section class="card">
+      <form id="form" novalidate>
+        <fieldset>
+          <legend>Operación</legend>
+          <label class="radio"><input type="radio" name="tipo" value="RETIRO" checked> Retirar efectivo</label>
+          <label class="radio"><input type="radio" name="tipo" value="ABONO"> Abonar efectivo</label>
+        </fieldset>
+        <label for="monto">Monto (S/)</label>
+        <input id="monto" inputmode="decimal" autocomplete="off" placeholder="200.00">
+        <button type="submit">Confirmar</button>
+      </form>
+      <p id="msg" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+      <h2>Historial de la cuenta</h2>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>ID</th><th>Tipo</th><th>Monto</th><th>Estado</th><th>Saldo</th><th>Detalle</th></tr></thead>
+          <tbody id="historial"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

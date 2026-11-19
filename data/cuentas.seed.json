@@ -1,0 +1,7 @@
+[
+  {"nombre": "Alice",  "saldo": 234.56},
+  {"nombre": "Hamza",  "saldo": 198.76},
+  {"nombre": "Carlos", "saldo": 500.00},
+  {"nombre": "Maria",  "saldo": 50.00},
+  {"nombre": "Pedro",  "saldo": 300.00}
+]

@@ -1,0 +1,12 @@
+# Binarios
+/atm-web
+/atm-cli
+*.exe
+# Datos de ejecución (la semilla data/cuentas.seed.json sí se versiona)
+/data/cuentas.json
+/data/transacciones.json
+*.tmp
+# Cobertura / IDE
+coverage.out
+.idea/
+.vscode/
